@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class MainMenuController : MonoBehaviour
     {
         SceneManager.LoadScene("CPUSchedulerScene");
     }
-    
+
     // 2. Load the Process Synchronization scene
     public void loadProcessSynchronization()
     {
