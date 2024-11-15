@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CPUSchedulerScene.unity
     guid: aac23e09b2efe44479673c0fdf0ab8f9
+  - enabled: 1
+    path: Assets/Scenes/ProcessSynchronizationScene.unity
+    guid: eb8c057187439994a9292859eb44c720
+  - enabled: 1
+    path: Assets/Scenes/MemoryManagementScene.unity
+    guid: 879ab5e80757b9743be669d270150ae1
   m_configObjects: {}
