@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MemoryManagementScene.unity
     guid: 879ab5e80757b9743be669d270150ae1
+  - enabled: 1
+    path: Assets/Scenes/FCFS.unity
+    guid: fdfc0f430a9f68a44909aa3dd05f31fe
+  - enabled: 1
+    path: Assets/Scenes/SJF.unity
+    guid: 5a03e7440c9880c4f980b4d1a251e23e
   m_configObjects: {}

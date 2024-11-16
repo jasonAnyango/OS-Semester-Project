@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.078431375, g: 0.6784314, b: 0.4901961, a: 1}
+  m_Color: {r: 0, g: 0.50980395, b: 0.50980395, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -578,7 +578,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1094266210}
-        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_TargetAssemblyTypeName: BackButtonController, Assembly-CSharp
         m_MethodName: loadCPUScheduler
         m_Mode: 1
         m_Arguments:
@@ -602,7 +602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.08343716, g: 0.7075472, b: 0.51117, a: 1}
+  m_Color: {r: 0, g: 0.50980395, b: 0.5098001, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -869,7 +869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.078431375, g: 0.6509804, b: 0.47058827, a: 1}
+  m_Color: {r: 0, g: 0.50980395, b: 0.50980395, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -930,7 +930,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.07943218, g: 0.1981132, b: 0.11547634, a: 0}
+  m_BackGroundColor: {r: 0, g: 0.27450982, b: 0.27450982, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -997,7 +997,7 @@ GameObject:
   - component: {fileID: 1094266211}
   - component: {fileID: 1094266210}
   m_Layer: 0
-  m_Name: MainMenuController
+  m_Name: ButtonController GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1012,7 +1012,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1094266209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c621a5af25c8db4b99af26788635dbf, type: 3}
+  m_Script: {fileID: 11500000, guid: a53abeaabac555d4c84309989a7f1925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1094266211
