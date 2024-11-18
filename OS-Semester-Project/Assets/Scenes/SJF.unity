@@ -349,6 +349,9 @@ MonoBehaviour:
   queueArea: {fileID: 514967905}
   processingArea: {fileID: 1172521505}
   jobPrefab: {fileID: 5198117564421303055, guid: 9baea94338ec89f49a5d769fd3f02320, type: 3}
+  avgWaitingTimeText: {fileID: 1088150062}
+  avgTATText: {fileID: 2005910841}
+  processTimerText: {fileID: 1022751934}
 --- !u!4 &886420126
 Transform:
   m_ObjectHideFlags: 0
@@ -1239,7 +1242,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 626.36554
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1264,7 +1267,7 @@ Transform:
   m_GameObject: {fileID: 1334013608}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 989, y: 546, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
