@@ -12,7 +12,7 @@ public class ReplacementScript : MonoBehaviour
     public Transform[] slots; // Assign the 4 slot panels in the Inspector
 
     [Header("Settings")]
-    public int totalPages = 15; // Total number of pages to spawn
+    public int totalPages = 7; // Total number of pages to spawn
     public int minPageNumber = 1;
     public int maxPageNumber = 9;
 
@@ -39,7 +39,7 @@ public class ReplacementScript : MonoBehaviour
             return;
         }
 
-        float offset = 60f; // Spacing between pages in the queue (adjust as needed)
+        float offset = 100f; // Spacing between pages in the queue (adjust as needed)
         Vector3 startPosition = queueParent.position; // Start position for spawning pages
 
         for (int i = 0; i < totalPages; i++)
@@ -89,7 +89,7 @@ public class ReplacementScript : MonoBehaviour
         {
             int currentPage = pageQueue.Dequeue();
             Destroy(queueParent.GetChild(0).gameObject); // Remove the visual page from the queue
-            yield return new WaitForSeconds(1f); // Delay for visualization
+            yield return new WaitForSeconds(3f); // Delay for visualization
 
             if (IsPageInSlots(currentPage))
             {
@@ -143,7 +143,8 @@ public class ReplacementScript : MonoBehaviour
         for (int i = 0; i < slotPages.Length; i++)
         {
             int nextUse = FindNextUse(slotPages[i]);
-            if (nextUse == -1) // Not used again
+            // If the page is not used again, return the array index of the slot
+            if (nextUse == -1) 
             {
                 return i;
             }

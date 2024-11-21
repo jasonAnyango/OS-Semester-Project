@@ -1012,9 +1012,10 @@ MonoBehaviour:
   flagText0: {fileID: 1103120224}
   flagText1: {fileID: 1302257030}
   turnText: {fileID: 641944308}
-  process0Panel: {fileID: 209394764}
-  process1Panel: {fileID: 720919813}
-  criticalSectionPanel: {fileID: 2072103406}
+  process0Panel: {fileID: 209394765}
+  process1Panel: {fileID: 720919814}
+  criticalSectionPanel: {fileID: 2072103407}
+  movementSpeed: 1
 --- !u!4 &556667562
 Transform:
   m_ObjectHideFlags: 0
