@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 69195689}
   - component: {fileID: 69195688}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Critical Section Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -929,7 +929,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 543239981}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 556667561}
+        m_TargetAssemblyTypeName: PetersonController, Assembly-CSharp
+        m_MethodName: StartSimulation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &543239981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -968,6 +980,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543239978}
   m_CullTransparentMesh: 1
+--- !u!1 &556667560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 556667562}
+  - component: {fileID: 556667561}
+  m_Layer: 0
+  m_Name: SimulationController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &556667561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556667560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207b1000929664c44bc17486effd1e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flagText0: {fileID: 1103120224}
+  flagText1: {fileID: 1302257030}
+  turnText: {fileID: 641944308}
+  process0Panel: {fileID: 209394764}
+  process1Panel: {fileID: 720919813}
+  criticalSectionPanel: {fileID: 2072103406}
+--- !u!4 &556667562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556667560}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &641944306
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,7 +1042,7 @@ GameObject:
   - component: {fileID: 641944309}
   - component: {fileID: 641944308}
   m_Layer: 5
-  m_Name: turn[]
+  m_Name: Turn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1025,7 +1087,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: turn[]
+  m_text: ' Turn: None'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1415,7 +1477,7 @@ GameObject:
   - component: {fileID: 1103120225}
   - component: {fileID: 1103120224}
   m_Layer: 5
-  m_Name: flag[0]
+  m_Name: Flag0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1617,7 +1679,7 @@ GameObject:
   - component: {fileID: 1302257031}
   - component: {fileID: 1302257030}
   m_Layer: 5
-  m_Name: flag[1]
+  m_Name: Flag1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1821,7 +1883,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1451734169}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 556667561}
+        m_TargetAssemblyTypeName: PetersonController, Assembly-CSharp
+        m_MethodName: ResetSimulation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1451734169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2050,7 +2124,7 @@ GameObject:
   - component: {fileID: 1578784010}
   - component: {fileID: 1578784009}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Processes Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2255,3 +2329,4 @@ SceneRoots:
   - {fileID: 173931594}
   - {fileID: 1242805229}
   - {fileID: 1570092748}
+  - {fileID: 556667562}
